@@ -1,0 +1,1 @@
+require 'ffcrm_ldap/engine'

@@ -1,0 +1,8 @@
+development:
+  host: ldap.example.com
+  port: 548
+  ssl: true
+  bind_dn: 'uid=admin.user,ou=admins,dc=example,dc=com'
+  bind_passwd: 'password'
+  search_base: "ou=people,dc=example,dc=com"
+  user_filter: "(uid=%s)"
