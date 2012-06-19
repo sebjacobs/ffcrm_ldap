@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "ffcrm_ldap"
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Seb Jacobs"]
@@ -13,15 +13,14 @@ Gem::Specification.new do |s|
   s.description = "ldap plugin for ffcrm"
   s.email = "me@sebjacobs.com"
   s.extra_rdoc_files = [
-    "LICENSE.txt",
-    "README.rdoc"
+    "LICENSE.txt"
   ]
   s.files = [
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
     "Rakefile",
+    "Readme.md",
     "VERSION",
     "app/controllers/application_controller.rb",
     "app/models/users/authentication.rb",
@@ -32,7 +31,7 @@ Gem::Specification.new do |s|
     "lib/ffcrm_ldap/engine.rb",
     "lib/ffcrm_ldap/ldap_access.rb",
     "lib/generators/.DS_Store",
-    "lib/generators/ffcrm_ldap/ffcrm_ldap_generator.rb",
+    "lib/generators/ffcrm_ldap/install_generator.rb",
     "lib/generators/ffcrm_ldap/templates/config/ldap.yml.example",
     "lib/generators/ffcrm_ldap/templates/config/ldap_attributes_map.yml.example",
     "spec/spec_helper.rb"
