@@ -185,8 +185,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  fat_free_crm
+  fat_free_crm (~> 0.11.3)
   jeweler (~> 1.8.3)
-  net-ldap
+  net-ldap (~> 0.3.1)
   rdoc (~> 3.12)
   rspec (~> 2.8.0)

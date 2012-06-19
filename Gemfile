@@ -1,7 +1,7 @@
 source :rubygems
 
-gem 'fat_free_crm'
-gem 'net-ldap', :require => 'net/ldap'
+gem 'fat_free_crm', '~> 0.11.3'
+gem 'net-ldap', '~> 0.3.1', :require => 'net/ldap'
 
 group :development do
   gem "rspec", "~> 2.8.0"
