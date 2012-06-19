@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Seb Jacobs"]
-  s.date = "2012-06-06"
+  s.date = "2012-06-19"
   s.description = "ldap plugin for ffcrm"
   s.email = "me@sebjacobs.com"
   s.extra_rdoc_files = [
@@ -17,21 +17,30 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    ".document",
-    ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "app/controllers/application_controller.rb",
+    "app/models/users/authentication.rb",
+    "app/models/users/user.rb",
+    "config/initializers/ldap_attributes_map.rb",
+    "ffcrm_ldap.gemspec",
     "lib/ffcrm_ldap.rb",
-    "spec/ffcrm_ldap_spec.rb",
+    "lib/ffcrm_ldap/engine.rb",
+    "lib/ffcrm_ldap/ldap_access.rb",
+    "lib/generators/.DS_Store",
+    "lib/generators/ffcrm_ldap/ffcrm_ldap_generator.rb",
+    "lib/generators/ffcrm_ldap/templates/config/ldap.yml.example",
+    "lib/generators/ffcrm_ldap/templates/config/ldap_attributes_map.yml.example",
     "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/sebjacobs/ffcrm_ldap"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.10"
+  s.rubygems_version = "1.8.23"
   s.summary = "ldap plugin for ffcrm"
 
   if s.respond_to? :specification_version then
