@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "ffcrm_ldap"
   gem.homepage = "http://github.com/sebjacobs/ffcrm_ldap"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{ldap plugin for ffcrm}
+  gem.description = %Q{ldap plugin for ffcrm}
   gem.email = "me@sebjacobs.com"
   gem.authors = ["Seb Jacobs"]
   # dependencies defined in Gemfile
