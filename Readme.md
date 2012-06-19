@@ -2,9 +2,32 @@
 
 ## Installation
 
-1. add gem 'ffcrm_ldap' to your Gemfile
-2. run generator rails generate ffcrm_ldap:install
-3. configure ldap.yml and ldap_attributes_map.yml
+Include the gem in your Gemfile:
+
+    gem "ffcrm_ldap", "~> 0.1.1"
+
+Generate config files
+
+    rails generate ffcrm_ldap:install
+
+Configure ldap.yml
+
+    development:
+      host: ldap.example.com
+      port: 548
+      ssl: true
+      bind_dn: 'uid=admin.user,ou=admins,dc=example,dc=com'
+      bind_passwd: 'password'
+      search_base: "ou=people,dc=example,dc=com"
+      user_filter: "(uid=%s)"
+
+Configure ldap_attributes_map.yml
+
+    email:      mail
+    first_name: givenname
+    last_name:  sn
+    phone:      telephonenumber
+    mobile:     mobile
 
 
 ## Contributing to ffcrm_ldap
