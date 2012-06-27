@@ -1,2 +1,5 @@
-LDAP_ATTRIBUTES_MAP = YAML.load_file(File.join(Rails.root, 'config', 'ldap_attributes_map.yml'))
-LDAP_ATTRIBUTES = LDAP_ATTRIBUTES_MAP.keys
+LDAP_ATTRIBUTES_FILE_PATH = Rails.root.join('config', 'ldap_attributes_map.yml')
+if File.exist?(LDAP_ATTRIBUTES_FILE_PATH)
+  LDAP_ATTRIBUTES_MAP = YAML.load_file(LDAP_ATTRIBUTES_FILE_PATH)
+  LDAP_ATTRIBUTES = LDAP_ATTRIBUTES_MAP.keys
+end
