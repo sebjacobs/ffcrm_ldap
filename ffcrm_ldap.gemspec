@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "ffcrm_ldap"
-  s.version = "0.1.0"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Seb Jacobs"]
-  s.date = "2012-06-19"
+  s.date = "2012-06-27"
   s.description = "ldap plugin for ffcrm"
   s.email = "me@sebjacobs.com"
   s.extra_rdoc_files = [
