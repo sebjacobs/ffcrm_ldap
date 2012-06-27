@@ -4,7 +4,7 @@
 
 Include the gem in your Gemfile:
 
-    gem "ffcrm_ldap", "~> 0.1.1"
+    gem "ffcrm_ldap", "~> 0.1.4"
 
 Generate config files
 
